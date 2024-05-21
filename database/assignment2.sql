@@ -51,8 +51,8 @@ SELECT
 i.classification_id, 
 i.inv_make, 
 i.inv_model
-FROM inventory i
-INNER JOIN classification c
+FROM public.inventory i
+INNER JOIN public.classification c
 	ON c.classification_id = i.classification_id
 	WHERE c.classification_id = 2;
 
