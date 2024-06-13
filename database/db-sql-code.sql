@@ -3,10 +3,12 @@
 -- DROP TYPE IF EXISTS public.account_type;
 
 CREATE TYPE public.account_type AS ENUM
-    ('Client', 'Employee', 'Admin');
+    ('Client', 
+    'Employee', 
+    'Admin');
 
 ALTER TYPE public.account_type
-    OWNER TO cse340db;
+    OWNER TO cse340database2_phkl;
 
     -- Table structure for table 'classification'
 CREATE TABLE public.classification (
